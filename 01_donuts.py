@@ -10,8 +10,11 @@ e donuts(23) retorna 'Number of donuts: many'
 """
 
 def donuts(count):
-    # +++ SUA SOLUÇÃO +++
-    return
+    if count >= 10:
+        x = 'many'   
+    else:
+        x = str(count)
+    return ('Number of donuts: ' + x)
 
 
 # --- Daqui para baixo são apenas códigos auxiliáries de teste. ---
@@ -28,7 +31,7 @@ def test(f, in_, expected):
         info = ''
     else:
         sign = '❌'
-        info = f'e o correto é {expected!r}'
+        info = f('e o correto é {expected!r}')
 
     print(f'{sign} {f.__name__}({in_!r}) retornou {out!r} {info}')
 
