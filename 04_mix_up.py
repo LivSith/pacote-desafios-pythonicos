@@ -38,8 +38,10 @@ def test(f, in_, expected):
 
 if __name__ == '__main__':
     # Testes que verificam o resultado do seu código em alguns cenários.
-    test(mix_up, ('oi', 'pod'), None)
     test(mix_up, ('mix', 'pod'), 'pox mid')
     test(mix_up, ('dog', 'dinner'), 'dig donner')
     test(mix_up, ('gnash', 'sport'), 'spash gnort')
     test(mix_up, ('pezzy', 'firm'), 'fizzy perm')
+    test(mix_up, ('oi', 'pod'), None)
+    test(mix_up, ('oi', 'li'), None)
+    test(mix_up, ('a', 'b'), None)
