@@ -11,7 +11,7 @@ Retorne o resultado da string.
 """
 
 def verbing(s):
-    # +++ SUA SOLUÇÃO +++
+    teste
     return
 
 
