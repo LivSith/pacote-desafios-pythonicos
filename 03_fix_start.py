@@ -15,10 +15,7 @@ onde todas as instancias de stra foram substituidas por strb.
 
 def fix_start(s):
     if len(s) >= 1:
-        initial = s[0]
-        verify_s = s[1:]
-        result = verify_s.replace(initial , '*')
-        new_str = initial + result
+        new_str = ''.join(s[0] + s[1:].replace(s[0], '*'))
     return new_str
 
 
