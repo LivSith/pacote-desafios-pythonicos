@@ -13,9 +13,8 @@ Assuma que a e b tem tamanho 2 ou maior.
 """
 
 def mix_up(a, b):
-    if len(a) > 2 and len(b) > 2:
-        str_mix = ((b[:2]+ a[2:]) + ' ' + (a[:2] + b[2:]))
-        return str_mix
+    str_mix = ((b[:2]+ a[2:]) + ' ' + (a[:2] + b[2:])) if len(a) > 2 and len(b) > 2 else None
+    return str_mix
 
 
 # --- Daqui para baixo são apenas códigos auxiliáries de teste. ---
